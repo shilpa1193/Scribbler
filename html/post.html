@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/postslist.css">
+    <link rel="stylesheet" href="../styles/post.css">
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/postslist.js"></script>
+    <script src="../scripts/post.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <meta charset="utf-8" name="viewport" content= "width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Common header -->
+    <div id="common-header"></div>
+    <script type="text/javascript">
+        buildHeader("common-header");
+    </script>
+
+    <div id="postdump">
+
+        <!-- Dump the Post details -->
+        <form>
+            <label for="title"></label>
+            <input type="text" class = "post-form post-form-title" id= "ftitle" name="title">
+            <label for="author"></label>
+            <div id="save-id">
+            <input type="text" class = "post-form post-form-author" id= "fauthor" name="author">
+                <span class="btn-edit-save" title='Edit' onclick="toggleEditable(1)">Edit  <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                </span>
+            </div>
+            <label for="content"></label>
+            <textarea class = "post-form post-form-content" id= "fcontent" name="content"></textarea>
+        </form>
+        <!-- Like Button -->
+        <div id = "like-button">
+        <span class="btn-like" title='like' onclick="postLiked()"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Like</span>
+        </div>
+        <p id = "like-note">Be the first one to like this</p>
+        <div>
+        <!-- Comments -->
+        <label for="comments"></label>
+        <input type="text" class = "post-form-comment" id= "fcomment" placeholder="Leave a comment..." name="comment">
+        </div>
+        <span class="btn-like" title='comment' onclick="postComment()">Comment</span>
+        <!-- Display of Comments -->
+        <p><b>All Comments</b></p>
+        <div class="post-comments" id = "pcomments"></div>
+    
+    </div>
+    <script type="text/javascript">
+        postDump();
+    </script>
+
+</body>
+
+</html>
+<div style="margin: 2em 2em 2em 2em;">
+    <div>
+        <p id="editSave" style="text-align:center;" contenteditable="true">Everything you should know about 'module' & 'require' in Node.js</p>
+        <button  id="editSave" style="float:right;padding: 8px 12px 8px 12px;" class="bttn" onclick="myFunction();"><span class="button-text"
+                id="buttonText">Edit</span>
+            <i class="fa fa-edit" id="buttonSymbol"></i>
+        </button>
+    </div>
+    <h3 style="font-family: 'Niconne', regular;font-size: 3em;">Srishti Gupta</h3><br><br>
+    <div style="overflow: hidden;"><p style="text-justify: auto;" id="myP" contenteditable="true">
+        Node.js treats each javascript file as separate module. For instance, if you have a file containing some code and this 
+        file is named xyz.js, then this file is treated as a module in Node, and you can say that you ha've created a module named
+        xyz.Let’s take an example to understand this better. You have a file named circle.js which consists of the logic for calculating 
+        the area & the circumference of a circle of a given radius, as given below circle.js,
+        You can call circle.js file a module named circle.
+        You might be wondering why is there a need to have multiple modules? You could have just written all the code in a
+        single module. Well, it is very important to write modular code. By modular, I mean to say that your code should be 
+         independent and should be loosely coupled. Imagine that there’s a large application and you have all your code written 
+         in just one place, just one file. Too messy, right?How does the code written inside a module run?Before executing the 
+         code written inside a module, Node takes the entire code and encloses it within a function wrapper. 
+         The syntax of this function wrapper is"
+    </p></div>
+
+    <div class="likeBlogButton">
+        <button id="likeBlog" onclick="postLiked()" class="fa fa-thumbs-up bttn"> Like</button>
+        <span id="commentCount"><br>Be the first one to like this!</span>
+    </div><br>
+    <textarea placeholder="Leave a comment..." id="userComments" value="" rows="4" cols="100"></textarea>
+    <br>
+    <button id="addList" class="bttn" onclick="addComments(userComments)">Comment</button>
+    <div id="addEventNames"></div>
+</div>
+
+    <script src="../js/post.js"></script>
+</body>
+</html>
