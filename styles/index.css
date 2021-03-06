@@ -1,0 +1,26 @@
+/* Setting the background on the homage page */
+html {
+    min-height: 100%;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/* Buttons used in the center of the page */
+.btn-center {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    margin-right: 5px;
+}
+/* Container for the buttons in the center of the page */
+.container-center {
+    position:absolute;
+    width:200px;
+    height:200px;
+    left:50%;
+    top:50%;
+    margin-left:-50px;
+    margin-top:-50px;
+}

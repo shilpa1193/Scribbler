@@ -1,0 +1,132 @@
+/* Buttons used in the header */
+.btn-head {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    margin-right: 4px;
+    font-size: 12px;
+    float:right;
+}
+/* signup Button */
+.btn-sign {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: green;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+/* Post Button */
+.btn-post {
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: green;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+/* Various Headers used */
+h1 {
+    font-family: 'Montez', cursive; 
+    color: blue;
+}
+h3 {
+    font-family: 'Ubuntu Mono', monospace;
+    font-style: italic;
+}
+h2 {
+    padding: 12px 20px;
+}
+h4 {
+    text-align: center;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    z-index: 1; /* Sit on top */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+/* Modal Content/Box */
+.modal-content {
+    position: relative;
+    background-color: white;
+    margin: 10px auto; /* 15% from the top and centered */
+    width: 30%; /* Could be more or less, depending on screen size */
+}
+.modal-content-post {
+    position: relative;
+    background-color: white;
+    margin: 10px auto; /* 15% from the top and centered */
+    width: 70%; /* Could be more or less, depending on screen size */
+}
+/* The Close Button */
+.close-form {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    top:0;
+    right:0;
+    padding: 8px 20px;
+}
+/* Toggle Form */
+.toggle-form {
+    /* Position it in the top right corner outside of the modal */
+    color: blue;
+}
+/* Close button on hover */
+.toggle-form:hover,
+.toggle-form:focus,
+.close-form:hover,
+.close-form:focus {
+    cursor: pointer;
+}
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+  /* Form Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: grey;
+    color:white;
+}
+/* Contents need a bigger box */
+.form-content {
+    height:250px;
+}
+/* Top-Right abd Top-Left Settings for Header */
+.header {
+    position: relative;
+}
+.top-right {
+    top:0;
+    right:0;
+    padding: 12px 20px;
+    margin: 8px 0;
+    position: absolute;
+}
+.top-left {
+    top:0;
+    left:0;
+    padding-left:8px;
+}
+::placeholder {
+    color:white;
+    opacity: 1;
+}
+.align-post {
+    text-align: center;
+}
